@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="CeCommon">
+      <UniqueIdentifier>{871fc4f0-8804-430d-8a43-2b2a3a4ec73c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CeCommon\OpenGL">
+      <UniqueIdentifier>{25b91635-c8cc-412b-81dc-1265d10648d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CeCommon\Math">
+      <UniqueIdentifier>{e874228c-79d8-4174-a2de-b79f2d17a90f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CeCommon\Tool">
+      <UniqueIdentifier>{9abdfe1d-4d98-4f8b-9c7a-78d181c3fe22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CeCommon\Helper">
+      <UniqueIdentifier>{12e68045-6c2b-4b0b-b36d-ea44524dbdbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CeCommon\DrawDebug">
+      <UniqueIdentifier>{4b320aaa-a482-4db9-b919-23e0f70b5a3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CeEngine">
+      <UniqueIdentifier>{56d44e9a-ba7d-437e-af9d-d02cbf768f24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CeEngine\Manager">
+      <UniqueIdentifier>{3f1ff9ba-0c5d-47fe-aa69-6c6f3777ae10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CeEngine\Object">
+      <UniqueIdentifier>{2d51e6d6-0762-4e49-8e3d-0383338d0db9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CeEngine\Render">
+      <UniqueIdentifier>{14e2f091-105f-44c7-b7ca-8e8773f98736}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CeEngine\Object\GameObject">
+      <UniqueIdentifier>{11ec97ce-b4f5-438e-bc4e-96f8f00c50ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CeEngine\Object\Component">
+      <UniqueIdentifier>{59810be3-1050-42e8-8f7d-759326864338}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CeEngine\Object\Scene">
+      <UniqueIdentifier>{2574d143-428e-4163-9386-095e166b5dc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CeGamePlay">
+      <UniqueIdentifier>{a0ee40b4-d6b5-4ec2-be5e-37ddfd7ec5d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CeEngine\Data">
+      <UniqueIdentifier>{6b9dbb84-5fbd-44a8-9d79-b37835f45b84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface">
+      <UniqueIdentifier>{e0a83199-29d3-48ea-90b6-c9c3e8e8a434}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\CeCommon\OpenGL\CeDraw.h">
+      <Filter>CeCommon\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeCommon\OpenGL\CeMeshFormatter.h">
+      <Filter>CeCommon\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeCommon\OpenGL\CeShaderCompiler.h">
+      <Filter>CeCommon\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeCommon\OpenGL\CeTextureFomatter.h">
+      <Filter>CeCommon\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeEngine\Manager\DebugLogManager.h">
+      <Filter>CeEngine\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeEngine\Manager\ResourceManager.h">
+      <Filter>CeEngine\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeEngine\Manager\SceneManager.h">
+      <Filter>CeEngine\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeCommon\Common.h">
+      <Filter>CeCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeEngine\Engine.h">
+      <Filter>CeEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeEngine\Render\Material.h">
+      <Filter>CeEngine\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeEngine\Render\Mesh.h">
+      <Filter>CeEngine\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeEngine\Render\RenderCommand.h">
+      <Filter>CeEngine\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeEngine\Render\Renderer.h">
+      <Filter>CeEngine\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeEngine\Render\Shader.h">
+      <Filter>CeEngine\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeEngine\Render\Sprite.h">
+      <Filter>CeEngine\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeEngine\Render\StaticMesh.h">
+      <Filter>CeEngine\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeEngine\Render\Texture2D.h">
+      <Filter>CeEngine\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeEngine\Object\Object.h">
+      <Filter>CeEngine\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeEngine\Object\ObjectFactory.h">
+      <Filter>CeEngine\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeEngine\Object\GameObject.h">
+      <Filter>CeEngine\Object\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeEngine\Object\Scene.h">
+      <Filter>CeEngine\Object\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeEngine\Object\SceneObject.h">
+      <Filter>CeEngine\Object\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeEngine\Component\Component.h">
+      <Filter>CeEngine\Object\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeEngine\Component\MeshRenderer.h">
+      <Filter>CeEngine\Object\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeEngine\Component\Transform.h">
+      <Filter>CeEngine\Object\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeCommon\Math\Math.h">
+      <Filter>CeCommon\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeCommon\Tool\Delegate.h">
+      <Filter>CeCommon\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeCommon\Tool\StaticClass.h">
+      <Filter>CeCommon\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeCommon\Tool\Time.h">
+      <Filter>CeCommon\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeEngine\Data\InlineData.h">
+      <Filter>CeEngine\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeGamePlay\Cube.h">
+      <Filter>CeGamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeCommon\Tool\MaterialLexer.h">
+      <Filter>CeCommon\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeCommon\Tool\CeLoader.h">
+      <Filter>CeCommon\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeCommon\Tool\CeEnums.h">
+      <Filter>CeCommon\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeCommon\Tool\CeStructs.h">
+      <Filter>CeCommon\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeCommon\Tool\SceneLexer.h">
+      <Filter>CeCommon\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeGamePlay\Object\BaseBox.h">
+      <Filter>CeGamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeCommon\Tool\ReflectionLexer.h">
+      <Filter>CeCommon\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeEngine\Manager\InputManager.h">
+      <Filter>CeEngine\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeCommon\OpenGL\CeWindow.h">
+      <Filter>CeCommon\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeGamePlay\Object\Actor.h">
+      <Filter>CeGamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeEngine\Manager\LightManager.h">
+      <Filter>CeEngine\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeCommon\Tool\CeLexer.h">
+      <Filter>CeCommon\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeCommon\Tool\CeVM.h">
+      <Filter>CeCommon\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeEngine\Component\LightComponent.h">
+      <Filter>CeEngine\Object\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeCommon\Tool\CeUtility.h">
+      <Filter>CeCommon\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeEngine\Render\RenderManager.h">
+      <Filter>CeEngine\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeGamePlay\Object\Earth.h">
+      <Filter>CeGamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeGamePlay\Object\Sun.h">
+      <Filter>CeGamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeEngine\Component\CameraComponent.h">
+      <Filter>CeEngine\Object\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeGamePlay\Object\CameraActor.h">
+      <Filter>CeGamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeGamePlay\Object\DirLight.h">
+      <Filter>CeGamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CeGamePlay\Object\PointLight.h">
+      <Filter>CeGamePlay</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CeCommon\OpenGL\CeDraw.cpp">
+      <Filter>CeCommon\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeCommon\OpenGL\CeMeshFormatter.cpp">
+      <Filter>CeCommon\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeCommon\OpenGL\CeShaderCompiler.cpp">
+      <Filter>CeCommon\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeCommon\OpenGL\CeTextureFomatter.cpp">
+      <Filter>CeCommon\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeEngine\Manager\DebugLogManager.cpp">
+      <Filter>CeEngine\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeEngine\Manager\SceneManager.cpp">
+      <Filter>CeEngine\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeCommon\Common.cpp">
+      <Filter>CeCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeEngine\Engine.cpp">
+      <Filter>CeEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeEngine\Render\Material.cpp">
+      <Filter>CeEngine\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeEngine\Render\Mesh.cpp">
+      <Filter>CeEngine\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeEngine\Render\RenderCommand.cpp">
+      <Filter>CeEngine\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeEngine\Render\Renderer.cpp">
+      <Filter>CeEngine\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeEngine\Render\Shader.cpp">
+      <Filter>CeEngine\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeEngine\Render\Sprite.cpp">
+      <Filter>CeEngine\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeEngine\Render\StaticMesh.cpp">
+      <Filter>CeEngine\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeEngine\Render\Texture2D.cpp">
+      <Filter>CeEngine\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeEngine\Object\Object.cpp">
+      <Filter>CeEngine\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeEngine\Object\ObjectFactory.cpp">
+      <Filter>CeEngine\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeEngine\Object\GameObject.cpp">
+      <Filter>CeEngine\Object\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeEngine\Object\Scene.cpp">
+      <Filter>CeEngine\Object\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeEngine\Object\SceneObject.cpp">
+      <Filter>CeEngine\Object\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeEngine\Component\Component.cpp">
+      <Filter>CeEngine\Object\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeEngine\Component\MeshRenderer.cpp">
+      <Filter>CeEngine\Object\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeEngine\Component\Transform.cpp">
+      <Filter>CeEngine\Object\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeCommon\Tool\StaticClass.cpp">
+      <Filter>CeCommon\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeCommon\Tool\Time.cpp">
+      <Filter>CeCommon\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeEngine\Data\InlineData.cpp">
+      <Filter>CeEngine\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeGamePlay\Cube.cpp">
+      <Filter>CeGamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeCommon\Tool\MaterialLexer.cpp">
+      <Filter>CeCommon\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeCommon\Tool\CeLoader.cpp">
+      <Filter>CeCommon\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeCommon\Tool\SceneLexer.cpp">
+      <Filter>CeCommon\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeGamePlay\Object\BaseBox.cpp">
+      <Filter>CeGamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeCommon\Tool\ReflectionLexer.cpp">
+      <Filter>CeCommon\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeEngine\Manager\InputManager.cpp">
+      <Filter>CeEngine\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeCommon\OpenGL\CeWindow.cpp">
+      <Filter>CeCommon\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeGamePlay\Object\Actor.cpp">
+      <Filter>CeGamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeEngine\Manager\LightManager.cpp">
+      <Filter>CeEngine\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeCommon\Tool\CeLexer.cpp">
+      <Filter>CeCommon\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeCommon\Tool\CeVM.cpp">
+      <Filter>CeCommon\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeEngine\Component\LightComponent.cpp">
+      <Filter>CeEngine\Object\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeCommon\Tool\CeUtility.cpp">
+      <Filter>CeCommon\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeEngine\Render\RenderManager.cpp">
+      <Filter>CeEngine\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeEngine\Manager\ResourceManager.cpp">
+      <Filter>CeEngine\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeGamePlay\Object\Earth.cpp">
+      <Filter>CeGamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeGamePlay\Object\Sun.cpp">
+      <Filter>CeGamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeEngine\Component\CameraComponent.cpp">
+      <Filter>CeEngine\Object\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeGamePlay\Object\CameraActor.cpp">
+      <Filter>CeGamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeGamePlay\Object\DirLight.cpp">
+      <Filter>CeGamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CeGamePlay\Object\PointLight.cpp">
+      <Filter>CeGamePlay</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

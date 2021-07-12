@@ -1,0 +1,88 @@
+<scene>
+	<object>
+	type[CameraActor]
+	name[main_name]
+		<component>
+		class_CameraComponent[]
+		class_MeshRenderer[]
+		class_Transform[-12.296323,2.690116,9.209558,-4.400002,0.000000,0.000000,1.000000,1.000000,1.000000]
+		</component>
+	</object>
+
+
+	<object>
+	type[Actor]
+	name[bunny]
+		<component>
+		class_MeshRenderer[asset/material/bunny.material]
+		class_Transform[0.000000,0.550000,10.000000,0.000000,0.000000,0.000000,0.003000,0.003000,0.003000]
+		</component>
+	</object>
+
+
+	<object>
+	type[Cube]
+	name[floor]
+		<component>
+		class_MeshRenderer[asset/material/cube.material]
+		class_Transform[0.000000,0.000000,10.000000,0.000000,0.000000,0.000000,40.000000,1.000000,40.000000]
+		</component>
+	</object>
+
+
+	<object>
+	type[DirLight]
+	name[sun]
+		<component>
+		class_LightComponent[1.0,1.0,1.0]
+		class_MeshRenderer[asset/material/dirLight.material]
+		class_Transform[0.000000,5.000000,12.000000,0.000000,0.000000,0.000000,1.000000,1.000000,1.000000]
+		</component>
+	</object>
+
+
+	<object>
+	type[Cube]
+	name[wall]
+		<component>
+		class_MeshRenderer[asset/material/cube.material]
+		class_Transform[0.000000,5.000000,20.000000,0.000000,0.000000,0.000000,40.000000,10.000000,1.000000]
+		</component>
+	</object>
+
+
+	<object>
+	type[DirLight]
+	name[red_light]
+		<component>
+		class_LightComponent[1.0,0.0,0.0]
+		class_MeshRenderer[C:/Users/24477/Desktop/CircleEditor-Main/ShaderViewer/ShaderViewer/asset/material/color1_light.material]
+		class_Transform[0.000000,1.000000,5.000000,0.000000,0.000000,0.000000,1.000000,1.000000,1.000000]
+		</component>
+	</object>
+
+
+	<object>
+	type[DirLight]
+	name[blue_light]
+		<component>
+		class_LightComponent[0.0,0.0,1.0]
+		class_MeshRenderer[C:/Users/24477/Desktop/CircleEditor-Main/ShaderViewer/ShaderViewer/asset/material/color2_light.material]
+		class_Transform[0.000000,2.000000,5.000000,0.000000,0.000000,0.000000,1.000000,1.000000,1.000000]
+		</component>
+	</object>
+
+
+	<object>
+	type[DirLight]
+	name[green_light]
+		<component>
+		class_LightComponent[0.0,1.0,0.0]
+		class_MeshRenderer[C:/Users/24477/Desktop/CircleEditor-Main/ShaderViewer/ShaderViewer/asset/material/color3_light.material]
+		class_Transform[0.000000,3.000000,5.000000,0.000000,0.000000,0.000000,1.000000,1.000000,1.000000]
+		</component>
+	</object>
+
+
+</scene>
+

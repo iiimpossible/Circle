@@ -1,0 +1,13 @@
+<material>
+    color[0.0 0.0 1.0]
+    <shader>
+        <texture>
+            name[iDiffuse]
+            path[asset/model/earth/earth.jpg]
+        </texture>
+        <code>
+            vertex[asset/material/shader/standard_v.shader]
+            fragment[asset/material/shader/standard_f.shader]
+        </code>
+    </shader>
+</material>

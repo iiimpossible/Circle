@@ -1,0 +1,11 @@
+<material>  
+    color[1.0 1.0 1.0]
+    <shader>
+        <texture>
+        </texture>
+        <code>
+            vertex[asset/material/shader/dirLight_v.shader]
+            fragment[asset/material/shader/dirLight_f.shader]
+        </code>           
+    </shader>    
+</material>

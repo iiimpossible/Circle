@@ -1,0 +1,70 @@
+<material>
+    <shader>
+        <texture>
+            name[]
+            path[]           
+        </texture>
+        <textre>
+            name[]
+            path[]
+        </textre>
+        <code>
+            vertex[
+            
+            #version 330 core
+            layout(location = 0) in vec3 aPos;
+
+            void main()
+            {
+
+            }
+
+
+            ]
+            fragment[
+            
+            #version 330 core
+            
+            void main()
+            {
+            
+            }
+            
+            ]
+        </code>
+    </shader>
+    <shader>
+        <texture>
+            name[]
+            path[]
+        </texture>
+        <textre>
+            name[]
+            path[]
+        </textre>
+        <code>
+            vertex[
+
+            #version 330 core
+            layout(location = 0) in vec3 aPos;
+
+            void main()
+            {
+
+            }
+
+
+            ]
+            fragment[
+
+            #version 330 core
+
+            void main()
+            {
+
+            }
+
+            ]
+        </code>
+    </shader>  
+</material>

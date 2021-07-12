@@ -1,0 +1,383 @@
+
+<material>
+    <shader>
+        <texture>
+            name[arm_dif]
+            path[asset/model/nanosuit/arm_dif.png]
+            name[arm_showroom_spec]
+            path[asset/model/nanosuit/arm_showroom_spec.png]
+        </texture>
+        <code>
+            vertex[
+            #version 330 core
+            layout(location = 0) in vec3 iPos;
+            layout(location = 1) in vec3 iNormal;
+            layout(location = 2) in vec2 iTexCoord;
+
+            out vec2 oTexCoord;
+            out vec3 oNormal;
+            out vec3 oFragPos;
+            out vec4 oFragPosInLightSpace;
+
+            uniform mat4 iModel;
+            uniform mat4 iView;
+            uniform mat4 iProjection;
+            uniform float iTime;
+
+            void main()
+            {
+            oTexCoord = iTexCoord;
+            oNormal = mat3(transpose(inverse(iModel))) * iNormal;
+            //计算片段位置，即将片段坐标通过模型矩阵转换到模型空间
+            //FragPos = vec3(model * vec4(aPos, 1.0f));
+
+            gl_Position = iProjection * iView * iModel * vec4(iPos, 1.0f);
+
+            //将片段位置转换到平行光源的位置
+            //FragPosInLightSpace = light_projection * light_view * vec4(FragPos, 1.0f);
+            }
+            ]
+
+            fragment[
+            #version 330 core
+            in vec2 oTexCoord;
+            in vec3 oNormal;
+            out vec4 oFragColor;
+            uniform float iTime;
+            uniform sampler2D arm_dif;
+            uniform sampler2D arm_showroom_spec;
+
+            void main()
+            {
+            vec4 arm_dif_tex = texture(arm_dif, oTexCoord);
+            vec4 arm_showroom_spec_tex = texture(arm_showroom_spec,oTexCoord );
+            //oFragColor = arm_dif_tex + arm_showroom_spec_tex;
+                oFragColor = arm_dif_tex;
+            }
+            ]
+        </code>
+    </shader>
+    
+    <shader>
+        <texture>
+            name[body_dif]
+            path[asset/model/bunny/decorate.jpg]
+            name[body_showroom_spec]
+            path[asset/model/nanosuit/body_showroom_spec.png]
+        </texture>
+        <code>
+            vertex[
+            #version 330 core
+            layout(location = 0) in vec3 iPos;
+            layout(location = 1) in vec3 iNormal;
+            layout(location = 2) in vec2 iTexCoord;
+
+            out vec2 oTexCoord;
+            out vec3 oNormal;
+            out vec3 oFragPos;
+            out vec4 oFragPosInLightSpace;
+
+            uniform mat4 iModel;
+            uniform mat4 iView;
+            uniform mat4 iProjection;
+            uniform float iTime;
+
+            void main()
+            {
+            oTexCoord = iTexCoord;
+            oNormal = mat3(transpose(inverse(iModel))) * iNormal;
+            //计算片段位置，即将片段坐标通过模型矩阵转换到模型空间
+            //FragPos = vec3(model * vec4(aPos, 1.0f));
+
+            gl_Position = iProjection * iView * iModel * vec4(iPos, 1.0f);
+
+            //将片段位置转换到平行光源的位置
+            //FragPosInLightSpace = light_projection * light_view * vec4(FragPos, 1.0f);
+            }]
+
+
+            fragment[
+            #version 330 core
+            in vec2 oTexCoord;
+            in vec3 oNormal;
+            out vec4 oFragColor;
+            uniform float iTime;
+            uniform sampler2D body_dif;
+            uniform sampler2D body_showroom_spec;
+            void main()
+            {
+
+            vec4 body_dif_tex = texture(body_dif, oTexCoord);
+            vec4 body_showroom_spec_tex = texture(body_showroom_spec, oTexCoord);
+           // oFragColor = body_dif_tex + body_showroom_spec_tex;
+            oFragColor = body_dif_tex;
+            }
+            ]
+        </code>        
+    </shader>
+
+    <shader>
+        <texture>
+            name[hand_dif]
+            path[asset/model/nanosuit/hand_dif.png]
+            name[hand_showroom_spec]
+            path[asset/model/nanosuit/hand_showroom_spec.png]
+        </texture>
+
+        <code>
+            vertex[
+            #version 330 core
+            layout(location = 0) in vec3 iPos;
+            layout(location = 1) in vec3 iNormal;
+            layout(location = 2) in vec2 iTexCoord;
+
+            out vec2 oTexCoord;
+            out vec3 oNormal;
+            out vec3 oFragPos;
+            out vec4 oFragPosInLightSpace;
+
+            uniform mat4 iModel;
+            uniform mat4 iView;
+            uniform mat4 iProjection;
+            uniform float iTime;
+
+            void main()
+            {
+            oTexCoord = iTexCoord;
+            oNormal = mat3(transpose(inverse(iModel))) * iNormal;
+            //计算片段位置，即将片段坐标通过模型矩阵转换到模型空间
+            //FragPos = vec3(model * vec4(aPos, 1.0f));
+
+            gl_Position = iProjection * iView * iModel * vec4(iPos, 1.0f);
+
+            //将片段位置转换到平行光源的位置
+            //FragPosInLightSpace = light_projection * light_view * vec4(FragPos, 1.0f);
+            }
+            ]
+
+
+            fragment[
+
+            #version 330 core
+            in vec2 oTexCoord;
+            in vec3 oNormal;
+            out vec4 oFragColor;
+            uniform float iTime;
+            uniform sampler2D hand_dif;
+            uniform sampler2D hand_showroom_spec;
+            void main()
+            {
+
+            vec4 hand_dif_tex = texture(hand_dif, oTexCoord);
+            vec4 hand_showroom_spec_tex = texture(hand_showroom_spec, oTexCoord);
+           // oFragColor = hand_dif_tex + hand_showroom_spec_tex;
+            oFragColor = hand_dif_tex ;
+            }
+
+            ]
+        </code>
+    </shader>
+    <shader>
+        <texture>
+            name[glass_dif]
+            path[asset/model/nanosuit/glass_dif.png]
+        </texture>
+        <code>
+            vertex[
+            #version 330 core
+            layout(location = 0) in vec3 iPos;
+            layout(location = 1) in vec3 iNormal;
+            layout(location = 2) in vec2 iTexCoord;
+
+            out vec2 oTexCoord;
+            out vec3 oNormal;
+            out vec3 oFragPos;
+            out vec4 oFragPosInLightSpace;
+
+            uniform mat4 iModel;
+            uniform mat4 iView;
+            uniform mat4 iProjection;
+            uniform float iTime;
+
+            void main()
+            {
+            oTexCoord = iTexCoord;
+            oNormal = mat3(transpose(inverse(iModel))) * iNormal;
+            //计算片段位置，即将片段坐标通过模型矩阵转换到模型空间
+            //FragPos = vec3(model * vec4(aPos, 1.0f));
+
+            gl_Position = iProjection * iView * iModel * vec4(iPos, 1.0f);
+
+            //将片段位置转换到平行光源的位置
+            //FragPosInLightSpace = light_projection * light_view * vec4(FragPos, 1.0f);
+            }
+            ]
+            fragment[
+            #version 330 core
+            in vec2 oTexCoord;
+            in vec3 oNormal;
+            out vec4 oFragColor;
+            uniform float iTime;
+            uniform sampler2D glass_dif;
+            void main()
+            {
+            vec4 glass_dif_tex = texture(glass_dif, oTexCoord);
+            oFragColor = glass_dif_tex;
+            }
+            
+            ]
+        </code>
+    </shader>
+
+    
+   
+
+    
+    <shader>
+        <texture>
+            name[helmet_diff]
+            path[asset/model/nanosuit/helmet_diff.png]
+            name[helmet_showroom_spec]
+            path[asset/model/nanosuit/helmet_showroom_spec.png]
+        </texture>
+        <code>
+            vertex[
+            #version 330 core
+            layout(location = 0) in vec3 iPos;
+            layout(location = 1) in vec3 iNormal;
+            layout(location = 2) in vec2 iTexCoord;
+
+            out vec2 oTexCoord;
+            out vec3 oNormal;
+            out vec3 oFragPos;
+            out vec4 oFragPosInLightSpace;
+
+            uniform mat4 iModel;
+            uniform mat4 iView;
+            uniform mat4 iProjection;
+            uniform float iTime;
+
+            void main()
+            {
+            oTexCoord = iTexCoord;
+            oNormal = mat3(transpose(inverse(iModel))) * iNormal;
+            //计算片段位置，即将片段坐标通过模型矩阵转换到模型空间
+            //FragPos = vec3(model * vec4(aPos, 1.0f));
+
+            gl_Position = iProjection * iView * iModel * vec4(iPos, 1.0f);
+
+            //将片段位置转换到平行光源的位置
+            //FragPosInLightSpace = light_projection * light_view * vec4(FragPos, 1.0f);
+            }
+            ]
+            fragment[
+            #version 330 core
+            in vec2 oTexCoord;
+            in vec3 oNormal;
+            out vec4 oFragColor;
+            uniform float iTime;
+
+            uniform sampler2D helmet_dif;
+
+            uniform sampler2D helmet_showroom_spec;
+
+            void main()
+            {
+
+            vec4 helmet_dif_tex = texture(helmet_dif, oTexCoord);
+            vec4 helmet_showroom_spec_tex = texture(helmet_showroom_spec, oTexCoord);
+            //oFragColor = helmet_dif_tex + helmet_showroom_spec_tex ;
+            oFragColor = helmet_dif_tex ;
+            }
+
+            ]
+        </code>
+    </shader>
+    
+    
+    <shader>
+        <texture>
+            name[leg_dif]
+            path[asset/model/nanosuit/leg_dif.png]
+            name[leg_showroom_spec]
+            path[asset/model/nanosuit/leg_showroom_spec.png]
+        </texture>
+        <code>
+            vertex[
+            #version 330 core
+            layout(location = 0) in vec3 iPos;
+            layout(location = 1) in vec3 iNormal;
+            layout(location = 2) in vec2 iTexCoord;
+
+            out vec2 oTexCoord;
+            out vec3 oNormal;
+            out vec3 oFragPos;
+            out vec4 oFragPosInLightSpace;
+
+            uniform mat4 iModel;
+            uniform mat4 iView;
+            uniform mat4 iProjection;
+            uniform float iTime;
+
+            void main()
+            {
+            oTexCoord = iTexCoord;
+            oNormal = mat3(transpose(inverse(iModel))) * iNormal;
+            //计算片段位置，即将片段坐标通过模型矩阵转换到模型空间
+            //FragPos = vec3(model * vec4(aPos, 1.0f));
+
+            gl_Position = iProjection * iView * iModel * vec4(iPos, 1.0f);
+
+            //将片段位置转换到平行光源的位置
+            //FragPosInLightSpace = light_projection * light_view * vec4(FragPos, 1.0f);
+            }
+            ]
+
+            fragment[
+
+            #version 330 core
+            in vec2 oTexCoord;
+            in vec3 oNormal;
+            out vec4 oFragColor;
+            uniform float iTime;
+
+            uniform sampler2D leg_dif;
+
+            uniform sampler2D leg_showroom_spec;
+            void main()
+            {
+
+            vec4 leg_dif_tex = texture(leg_dif, oTexCoord);
+            vec4 leg_showroom_spec_tex = texture(leg_showroom_spec, oTexCoord);
+           // oFragColor = leg_dif_tex + leg_showroom_spec_tex;
+            oFragColor = leg_dif_tex;
+            }
+
+            ]
+        </code>
+    </shader>
+</material>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

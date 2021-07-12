@@ -1,0 +1,17 @@
+<material>
+    <shader>
+        <texture>
+            name[iDiffuse]
+            path[asset/texture/woodfloor.jpg]
+        </texture>
+        <code>
+            vertex[asset/material/shader/standard_v.shader]
+            fragment[asset/material/shader/standard_f.shader]
+        </code>        
+    </shader>
+</material>
+
+
+
+
+

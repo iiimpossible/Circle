@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{533833A8-0E4D-4D3C-8BE8-76F093757D52}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Celibx64</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\24477\Desktop\CircleEditor-Main\ShaderViewer\Celib_x64\lib;lib\assimpx64\include;C:\Users\24477\Desktop\CircleEditor-Main\ShaderViewer;src;lib\glm;lib\glew-2.1.0-win32\glew-2.1.0\include;lib\glfw_x64\include;$(IncludePath)</IncludePath>
+    <LibraryPath>lib\assimpx64\lib;C:\Users\24477\Desktop\CircleEditor-Main\ShaderViewer\x64\Debug;lib\glfw_x64;lib\glew-2.1.0-win32\glew-2.1.0\lib\Release\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\24477\Desktop\CircleEditor-Main\ShaderViewer\Celib_x64\lib;lib\assimpx64\include;C:\Users\24477\Desktop\CircleEditor-Main\ShaderViewer;src;lib\glm;lib\glew-2.1.0-win32\glew-2.1.0\include;lib\glfw_x64\include;$(IncludePath)</IncludePath>
+    <LibraryPath>lib\assimpx64\lib;C:\Users\24477\Desktop\CircleEditor-Main\ShaderViewer\x64\Debug;lib\glfw_x64;lib\glew-2.1.0-win32\glew-2.1.0\lib\Release\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\24477\Desktop\CircleEditor-Main\ShaderViewer\Celib_x64\lib;lib\assimpx64\include;C:\Users\24477\Desktop\CircleEditor-Main\ShaderViewer;src;lib\glm;lib\glew-2.1.0-win32\glew-2.1.0\include;lib\glfw_x64\include;$(IncludePath)</IncludePath>
+    <LibraryPath>lib\assimpx64\lib;C:\Users\24477\Desktop\CircleEditor-Main\ShaderViewer\x64\Debug;lib\glfw_x64;lib\glew-2.1.0-win32\glew-2.1.0\lib\Release\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\24477\Desktop\CircleEditor-Main\ShaderViewer\Celib_x64\lib;lib\assimpx64\include;C:\Users\24477\Desktop\CircleEditor-Main\ShaderViewer;src;lib\glm;lib\glew-2.1.0-win32\glew-2.1.0\include;lib\glfw_x64\include;$(IncludePath)</IncludePath>
+    <LibraryPath>lib\assimpx64\lib;C:\Users\24477\Desktop\CircleEditor-Main\ShaderViewer\x64\Debug;lib\glfw_x64;lib\glew-2.1.0-win32\glew-2.1.0\lib\Release\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>CELIB_EXPORT;DEBUG_LOG</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>OpenGL32.lib;glfw3.lib;glew32s.lib;assimp-vc141-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>CELIB_EXPORT;DEBUG_LOG</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>OpenGL32.lib;glfw3.lib;glew32s.lib;assimp-vc141-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>CELIB_EXPORT;DEBUG_LOG</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>OpenGL32.lib;glfw3.lib;glew32s.lib;assimp-vc141-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>CELIB_EXPORT;DEBUG_LOG</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>OpenGL32.lib;glfw3.lib;glew32s.lib;assimp-vc141-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="src\CeCommon\Common.h" />
+    <ClInclude Include="src\CeCommon\Math\Math.h" />
+    <ClInclude Include="src\CeCommon\OpenGL\CeDraw.h" />
+    <ClInclude Include="src\CeCommon\OpenGL\CeMeshFormatter.h" />
+    <ClInclude Include="src\CeCommon\OpenGL\CeShaderCompiler.h" />
+    <ClInclude Include="src\CeCommon\OpenGL\CeTextureFomatter.h" />
+    <ClInclude Include="src\CeCommon\OpenGL\CeWindow.h" />
+    <ClInclude Include="src\CeCommon\Tool\CeLexer.h" />
+    <ClInclude Include="src\CeCommon\Tool\CeLoader.h" />
+    <ClInclude Include="src\CeCommon\Tool\CeUtility.h" />
+    <ClInclude Include="src\CeCommon\Tool\CeVM.h" />
+    <ClInclude Include="src\CeCommon\Tool\Delegate.h" />
+    <ClInclude Include="src\CeCommon\Tool\CeEnums.h" />
+    <ClInclude Include="src\CeCommon\Tool\MaterialLexer.h" />
+    <ClInclude Include="src\CeCommon\Tool\ReflectionLexer.h" />
+    <ClInclude Include="src\CeCommon\Tool\SceneLexer.h" />
+    <ClInclude Include="src\CeCommon\Tool\StaticClass.h" />
+    <ClInclude Include="src\CeCommon\Tool\CeStructs.h" />
+    <ClInclude Include="src\CeCommon\Tool\Time.h" />
+    <ClInclude Include="src\CeEngine\Component\CameraComponent.h" />
+    <ClInclude Include="src\CeEngine\Component\Component.h" />
+    <ClInclude Include="src\CeEngine\Component\LightComponent.h" />
+    <ClInclude Include="src\CeEngine\Component\MeshRenderer.h" />
+    <ClInclude Include="src\CeEngine\Component\Transform.h" />
+    <ClInclude Include="src\CeEngine\Data\InlineData.h" />
+    <ClInclude Include="src\CeEngine\Engine.h" />
+    <ClInclude Include="src\CeEngine\Manager\DebugLogManager.h" />
+    <ClInclude Include="src\CeEngine\Manager\InputManager.h" />
+    <ClInclude Include="src\CeEngine\Manager\LightManager.h" />
+    <ClInclude Include="src\CeEngine\Manager\ResourceManager.h" />
+    <ClInclude Include="src\CeEngine\Manager\SceneManager.h" />
+    <ClInclude Include="src\CeEngine\Object\GameObject.h" />
+    <ClInclude Include="src\CeEngine\Object\Object.h" />
+    <ClInclude Include="src\CeEngine\Object\ObjectFactory.h" />
+    <ClInclude Include="src\CeEngine\Object\Scene.h" />
+    <ClInclude Include="src\CeEngine\Object\SceneObject.h" />
+    <ClInclude Include="src\CeEngine\Render\Material.h" />
+    <ClInclude Include="src\CeEngine\Render\Mesh.h" />
+    <ClInclude Include="src\CeEngine\Render\RenderCommand.h" />
+    <ClInclude Include="src\CeEngine\Render\Renderer.h" />
+    <ClInclude Include="src\CeEngine\Render\RenderManager.h" />
+    <ClInclude Include="src\CeEngine\Render\Shader.h" />
+    <ClInclude Include="src\CeEngine\Render\Sprite.h" />
+    <ClInclude Include="src\CeEngine\Render\StaticMesh.h" />
+    <ClInclude Include="src\CeEngine\Render\Texture2D.h" />
+    <ClInclude Include="src\CeGamePlay\Cube.h" />
+    <ClInclude Include="src\CeGamePlay\Object\Actor.h" />
+    <ClInclude Include="src\CeGamePlay\Object\BaseBox.h" />
+    <ClInclude Include="src\CeGamePlay\Object\CameraActor.h" />
+    <ClInclude Include="src\CeGamePlay\Object\Earth.h" />
+    <ClInclude Include="src\CeGamePlay\Object\DirLight.h" />
+    <ClInclude Include="src\CeGamePlay\Object\PointLight.h" />
+    <ClInclude Include="src\CeGamePlay\Object\Sun.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\CeCommon\Common.cpp" />
+    <ClCompile Include="src\CeCommon\OpenGL\CeDraw.cpp" />
+    <ClCompile Include="src\CeCommon\OpenGL\CeMeshFormatter.cpp" />
+    <ClCompile Include="src\CeCommon\OpenGL\CeShaderCompiler.cpp" />
+    <ClCompile Include="src\CeCommon\OpenGL\CeTextureFomatter.cpp" />
+    <ClCompile Include="src\CeCommon\OpenGL\CeWindow.cpp" />
+    <ClCompile Include="src\CeCommon\Tool\CeLexer.cpp" />
+    <ClCompile Include="src\CeCommon\Tool\CeLoader.cpp" />
+    <ClCompile Include="src\CeCommon\Tool\CeUtility.cpp" />
+    <ClCompile Include="src\CeCommon\Tool\CeVM.cpp" />
+    <ClCompile Include="src\CeCommon\Tool\MaterialLexer.cpp" />
+    <ClCompile Include="src\CeCommon\Tool\ReflectionLexer.cpp" />
+    <ClCompile Include="src\CeCommon\Tool\SceneLexer.cpp" />
+    <ClCompile Include="src\CeCommon\Tool\StaticClass.cpp" />
+    <ClCompile Include="src\CeCommon\Tool\Time.cpp" />
+    <ClCompile Include="src\CeEngine\Component\CameraComponent.cpp" />
+    <ClCompile Include="src\CeEngine\Component\Component.cpp" />
+    <ClCompile Include="src\CeEngine\Component\LightComponent.cpp" />
+    <ClCompile Include="src\CeEngine\Component\MeshRenderer.cpp" />
+    <ClCompile Include="src\CeEngine\Component\Transform.cpp" />
+    <ClCompile Include="src\CeEngine\Data\InlineData.cpp" />
+    <ClCompile Include="src\CeEngine\Engine.cpp" />
+    <ClCompile Include="src\CeEngine\Manager\DebugLogManager.cpp" />
+    <ClCompile Include="src\CeEngine\Manager\InputManager.cpp" />
+    <ClCompile Include="src\CeEngine\Manager\LightManager.cpp" />
+    <ClCompile Include="src\CeEngine\Manager\ResourceManager.cpp" />
+    <ClCompile Include="src\CeEngine\Manager\SceneManager.cpp" />
+    <ClCompile Include="src\CeEngine\Object\GameObject.cpp" />
+    <ClCompile Include="src\CeEngine\Object\Object.cpp" />
+    <ClCompile Include="src\CeEngine\Object\ObjectFactory.cpp" />
+    <ClCompile Include="src\CeEngine\Object\Scene.cpp" />
+    <ClCompile Include="src\CeEngine\Object\SceneObject.cpp" />
+    <ClCompile Include="src\CeEngine\Render\Material.cpp" />
+    <ClCompile Include="src\CeEngine\Render\Mesh.cpp" />
+    <ClCompile Include="src\CeEngine\Render\RenderCommand.cpp" />
+    <ClCompile Include="src\CeEngine\Render\Renderer.cpp" />
+    <ClCompile Include="src\CeEngine\Render\RenderManager.cpp" />
+    <ClCompile Include="src\CeEngine\Render\Shader.cpp" />
+    <ClCompile Include="src\CeEngine\Render\Sprite.cpp" />
+    <ClCompile Include="src\CeEngine\Render\StaticMesh.cpp" />
+    <ClCompile Include="src\CeEngine\Render\Texture2D.cpp" />
+    <ClCompile Include="src\CeGamePlay\Cube.cpp" />
+    <ClCompile Include="src\CeGamePlay\Object\Actor.cpp" />
+    <ClCompile Include="src\CeGamePlay\Object\BaseBox.cpp" />
+    <ClCompile Include="src\CeGamePlay\Object\CameraActor.cpp" />
+    <ClCompile Include="src\CeGamePlay\Object\Earth.cpp" />
+    <ClCompile Include="src\CeGamePlay\Object\DirLight.cpp" />
+    <ClCompile Include="src\CeGamePlay\Object\PointLight.cpp" />
+    <ClCompile Include="src\CeGamePlay\Object\Sun.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

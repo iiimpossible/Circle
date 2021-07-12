@@ -1,0 +1,35 @@
+<scene>
+	<object>
+	type[Earth]
+	name[Earth]
+		<component>
+		class_MeshRenderer[]
+		class_Transform[-98.243263,0.000000,118.661728,0.000000,775.642395,0.000000,0.010000,0.010000,0.010000]
+		</component>
+	</object>
+
+
+	<object>
+	type[Sun]
+	name[Sun]
+		<component>
+		class_LightComponent[1.0,1.0,1.0]
+		class_MeshRenderer[]
+		class_Transform[0.000000,0.000000,100.000000,0.000000,0.000000,0.000000,0.100000,0.100000,0.100000]
+		</component>
+	</object>
+
+
+	<object>
+	type[CameraActor]
+	name[CameraActor]
+		<component>
+		class_CameraComponent[]
+		class_MeshRenderer[]
+		class_Transform[-6.398500,100.000000,27.927000,79.599976,0.000000,0.000000,1.000000,1.000000,1.000000]
+		</component>
+	</object>
+
+
+</scene>
+

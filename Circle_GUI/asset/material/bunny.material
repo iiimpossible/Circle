@@ -1,0 +1,72 @@
+<material>
+    <shader>
+        <texture>
+            name[iDiffuse]
+            path[asset/model/bunny/decorate.jpg]
+        </texture>
+        <code>
+            vertex[asset/material/shader/standard_v.shader]
+            fragment[asset/material/shader/standard_f.shader]
+        </code>
+    </shader>
+    
+    <shader>
+        <texture>
+            name[iDiffuse]
+            path[asset/model/bunny/hair.jpg]
+        </texture>
+        <code>
+            vertex[asset/material/shader/standard_v.shader]
+            fragment[asset/material/shader/standard_f.shader]
+        </code>
+    </shader>
+
+    <shader>
+        <texture>
+            name[iDiffuse]
+            path[asset/model/bunny/face.jpg]
+        </texture>
+        <code>
+            vertex[asset/material/shader/standard_v.shader]
+            fragment[asset/material/shader/standard_f.shader]
+        </code>
+    </shader>
+
+    <shader>
+        <texture>
+            name[iDiffuse]
+            path[asset/model/bunny/body.jpg]
+        </texture>
+        <code>
+            vertex[asset/material/shader/standard_v.shader]
+            fragment[asset/material/shader/standard_f.shader]
+        </code>
+    </shader>
+
+    <shader>
+        <texture>
+            name[iDiffuse]
+            path[asset/model/bunny/eye.jpg]
+        </texture>
+        <code>
+
+            vertex[asset/material/shader/standard_v.shader]
+            fragment[asset/material/shader/standard_f.shader]
+        </code>        
+    </shader> 
+</material>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="Widget">
+      <UniqueIdentifier>{09861270-21d8-48aa-805b-84fa94aa55b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller">
+      <UniqueIdentifier>{8ca7ce9c-383c-487e-8566-91e27c4933b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widget\MyBase">
+      <UniqueIdentifier>{1b364ce2-743f-42d1-8b13-75ef0d403290}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widget\FunctionalWidget">
+      <UniqueIdentifier>{4bb6dc00-92ef-401c-ba55-14ba3ce7bb07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{f1dac7dd-5dd3-4f86-80fa-87d41eb0de6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset">
+      <UniqueIdentifier>{acb282ef-6571-444a-9cf3-cff56ff7cc10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Material">
+      <UniqueIdentifier>{d32062f7-9022-491b-9d38-cd82d1b9350b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Scene">
+      <UniqueIdentifier>{41bc1b0b-13f6-4d1d-90ab-a35897f12061}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Material\Shader">
+      <UniqueIdentifier>{80f266e6-d9f4-4480-9b9b-2b4559602275}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Skybox">
+      <UniqueIdentifier>{65e1c8fc-31aa-48a9-a94e-1ef68ace3060}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="ShaderViewer.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtUic Include="ShaderViewer.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtMoc Include="ShaderViewer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClCompile Include="ShaderViewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\controller\Controller.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widget\MyDockWidget.cpp">
+      <Filter>Widget\MyBase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widget\MyLabel.cpp">
+      <Filter>Widget\MyBase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widget\MyListWidget.cpp">
+      <Filter>Widget\MyBase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widget\MyTableWidget.cpp">
+      <Filter>Widget\MyBase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widget\MyWidget.cpp">
+      <Filter>Widget\MyBase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widget\FileSystemWidget.cpp">
+      <Filter>Widget\FunctionalWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widget\FunctionalWidget\Console.cpp">
+      <Filter>Widget\FunctionalWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widget\FunctionalWidget\ObjectListWidget.cpp">
+      <Filter>Widget\FunctionalWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widget\MyMenu.cpp">
+      <Filter>Widget\MyBase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widget\MyDialog.cpp">
+      <Filter>Widget\MyBase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widget\FunctionalWidget\FileExplore.cpp">
+      <Filter>Widget\FunctionalWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widget\MyCollapsibleWidget.cpp">
+      <Filter>Widget\MyBase</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="src\widget\MyDockWidget.h">
+      <Filter>Widget\MyBase</Filter>
+    </QtMoc>
+    <QtMoc Include="src\widget\MyLabel.h">
+      <Filter>Widget\MyBase</Filter>
+    </QtMoc>
+    <QtMoc Include="src\widget\MyListWidget.h">
+      <Filter>Widget\MyBase</Filter>
+    </QtMoc>
+    <QtMoc Include="src\widget\MyTableWidget.h">
+      <Filter>Widget\MyBase</Filter>
+    </QtMoc>
+    <QtMoc Include="src\widget\MyWidget.h">
+      <Filter>Widget\MyBase</Filter>
+    </QtMoc>
+    <QtMoc Include="src\widget\FileSystemWidget.h">
+      <Filter>Widget\FunctionalWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="src\widget\FunctionalWidget\Console.h">
+      <Filter>Widget\FunctionalWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="src\widget\FunctionalWidget\ObjectListWidget.h">
+      <Filter>Widget\FunctionalWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="src\controller\Controller.h">
+      <Filter>Controller</Filter>
+    </QtMoc>
+    <QtMoc Include="src\widget\FunctionalWidget\FileExplore.h">
+      <Filter>Widget\FunctionalWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="src\widget\MyCollapsibleWidget.h">
+      <Filter>Widget\MyBase</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\common\MyEnum.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\MyStruct.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\MyCommon.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\widget\MyMenu.h">
+      <Filter>Widget\MyBase</Filter>
+    </ClInclude>
+    <ClInclude Include="src\widget\MyDialog.h">
+      <Filter>Widget\MyBase</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="asset\scene\first_scene.scene">
+      <Filter>Asset\Scene</Filter>
+    </None>
+    <None Include="asset\material\bunny.material">
+      <Filter>Asset\Material</Filter>
+    </None>
+    <None Include="asset\material\cube.material">
+      <Filter>Asset\Material</Filter>
+    </None>
+    <None Include="asset\material\shader\dirLight_f.shader">
+      <Filter>Asset\Material\Shader</Filter>
+    </None>
+    <None Include="asset\material\shader\dirLight_v.shader">
+      <Filter>Asset\Material\Shader</Filter>
+    </None>
+    <None Include="asset\material\dirLight.material">
+      <Filter>Asset\Material</Filter>
+    </None>
+    <None Include="asset\material\shader\bloom_f.shader">
+      <Filter>Asset\Material\Shader</Filter>
+    </None>
+    <None Include="asset\material\shader\bloom_v.shader">
+      <Filter>Asset\Material\Shader</Filter>
+    </None>
+    <None Include="asset\material\shader\blur_f.shader">
+      <Filter>Asset\Material\Shader</Filter>
+    </None>
+    <None Include="asset\material\shader\blur_v.shader">
+      <Filter>Asset\Material\Shader</Filter>
+    </None>
+    <None Include="asset\material\shader\bloom_final_f.shader">
+      <Filter>Asset\Material\Shader</Filter>
+    </None>
+    <None Include="asset\material\shader\bloom_final_v.shader">
+      <Filter>Asset\Material\Shader</Filter>
+    </None>
+    <None Include="asset\material\color3_light.material">
+      <Filter>Asset\Material</Filter>
+    </None>
+    <None Include="asset\material\color2_light.material">
+      <Filter>Asset\Material</Filter>
+    </None>
+    <None Include="asset\material\color1_light.material">
+      <Filter>Asset\Material</Filter>
+    </None>
+    <None Include="asset\scene\output_scene.scene">
+      <Filter>Asset\Scene</Filter>
+    </None>
+    <None Include="asset\material\shader\skybox_f.shader">
+      <Filter>Asset\Material\Shader</Filter>
+    </None>
+    <None Include="asset\material\shader\skybox_v.shader">
+      <Filter>Asset\Material\Shader</Filter>
+    </None>
+    <None Include="asset\texture\skybox\starfield\starfield.sky">
+      <Filter>Asset\Skybox</Filter>
+    </None>
+    <None Include="asset\material\shader\shadowmap_f.shader">
+      <Filter>Asset\Material\Shader</Filter>
+    </None>
+    <None Include="asset\material\shader\shadowmap_v.shader">
+      <Filter>Asset\Material\Shader</Filter>
+    </None>
+    <None Include="asset\material\shader\fullscreen_f.shader">
+      <Filter>Asset\Material\Shader</Filter>
+    </None>
+    <None Include="asset\material\shader\fullscreen_v.shader">
+      <Filter>Asset\Material\Shader</Filter>
+    </None>
+    <None Include="asset\scene\shadowmap_test.scene">
+      <Filter>Asset\Scene</Filter>
+    </None>
+    <None Include="asset\scene\house.scene">
+      <Filter>Asset\Scene</Filter>
+    </None>
+    <None Include="asset\material\shader\standard_v.shader">
+      <Filter>Asset\Material\Shader</Filter>
+    </None>
+    <None Include="asset\material\shader\standard_f.shader">
+      <Filter>Asset\Material\Shader</Filter>
+    </None>
+    <None Include="asset\material\earth.material">
+      <Filter>Asset\Material</Filter>
+    </None>
+    <None Include="asset\scene\solar_system.scene">
+      <Filter>Asset\Scene</Filter>
+    </None>
+    <None Include="asset\scene\showing.scene">
+      <Filter>Asset\Scene</Filter>
+    </None>
+  </ItemGroup>
+</Project>

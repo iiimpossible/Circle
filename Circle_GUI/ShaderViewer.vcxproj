@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{231C691F-BDE0-4D46-9192-D9F7C840D034}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.17763.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <IncludePath>C:\Users\24477\Desktop\CircleEditor-Main\ShaderViewer;C:\Users\24477\Desktop\CircleEditor-Main\ShaderViewer\Celib_x64\Source;C:\Users\24477\Desktop\CircleEditor-Main\ShaderViewer\x64\Debug;C:\Users\24477\Desktop\CircleEditor-Main\ShaderViewer\Celib_x64\lib\glm;C:\Users\24477\Desktop\CircleEditor-Main\ShaderViewer\Celib_x64;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\24477\Desktop\CircleEditor-Main\ShaderViewer\x64\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <IncludePath>C:\Users\24477\Desktop\CircleEditor-Main\ShaderViewer;C:\Users\24477\Desktop\CircleEditor-Main\ShaderViewer\Celib_x64\Source;C:\Users\24477\Desktop\CircleEditor-Main\ShaderViewer\x64\Debug;C:\Users\24477\Desktop\CircleEditor-Main\ShaderViewer\Celib_x64\lib\glm;C:\Users\24477\Desktop\CircleEditor-Main\ShaderViewer\Celib_x64;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\24477\Desktop\CircleEditor-Main\ShaderViewer\x64\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <AdditionalDependencies>Celib_x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\24477\Desktop\CircleEditor-Main\CircleEngine-SrcPure\Celib_x64\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>DEBUGLOGOUTPUT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Link>
+      <AdditionalDependencies>Celib_x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\24477\Desktop\CircleEditor-Main\CircleEngine-SrcPure\Celib_x64\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>DEBUGLOGOUTPUT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\controller\Controller.cpp" />
+    <ClCompile Include="src\widget\FileSystemWidget.cpp" />
+    <ClCompile Include="src\widget\FunctionalWidget\Console.cpp" />
+    <ClCompile Include="src\widget\FunctionalWidget\FileExplore.cpp" />
+    <ClCompile Include="src\widget\FunctionalWidget\ObjectListWidget.cpp" />
+    <ClCompile Include="src\widget\MyCollapsibleWidget.cpp" />
+    <ClCompile Include="src\widget\MyDialog.cpp" />
+    <ClCompile Include="src\widget\MyDockWidget.cpp" />
+    <ClCompile Include="src\widget\MyLabel.cpp" />
+    <ClCompile Include="src\widget\MyListWidget.cpp" />
+    <ClCompile Include="src\widget\MyMenu.cpp" />
+    <ClCompile Include="src\widget\MyTableWidget.cpp" />
+    <ClCompile Include="src\widget\MyWidget.cpp" />
+    <QtRcc Include="ShaderViewer.qrc" />
+    <QtUic Include="ShaderViewer.ui" />
+    <QtMoc Include="ShaderViewer.h" />
+    <ClCompile Include="ShaderViewer.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="src\widget\MyDockWidget.h" />
+    <QtMoc Include="src\widget\MyTableWidget.h" />
+    <QtMoc Include="src\widget\MyLabel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="src\widget\MyListWidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="src\widget\FileSystemWidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="src\widget\MyWidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="src\controller\Controller.h" />
+    <QtMoc Include="src\widget\FunctionalWidget\ObjectListWidget.h" />
+    <QtMoc Include="src\widget\FunctionalWidget\Console.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\common\MyCommon.h" />
+    <ClInclude Include="src\common\MyEnum.h" />
+    <ClInclude Include="src\common\MyStruct.h" />
+    <QtMoc Include="src\widget\FunctionalWidget\FileExplore.h" />
+    <QtMoc Include="src\widget\MyCollapsibleWidget.h" />
+    <ClInclude Include="src\widget\MyDialog.h" />
+    <ClInclude Include="src\widget\MyMenu.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="asset\material\bunny.material" />
+    <None Include="asset\material\color1_light.material" />
+    <None Include="asset\material\color2_light.material" />
+    <None Include="asset\material\color3_light.material" />
+    <None Include="asset\material\cube.material" />
+    <None Include="asset\material\dirLight.material" />
+    <None Include="asset\material\earth.material" />
+    <None Include="asset\material\shader\bloom_f.shader" />
+    <None Include="asset\material\shader\bloom_final_f.shader" />
+    <None Include="asset\material\shader\bloom_final_v.shader" />
+    <None Include="asset\material\shader\bloom_v.shader" />
+    <None Include="asset\material\shader\blur_f.shader" />
+    <None Include="asset\material\shader\blur_v.shader" />
+    <None Include="asset\material\shader\standard_f.shader" />
+    <None Include="asset\material\shader\standard_v.shader" />
+    <None Include="asset\material\shader\dirLight_f.shader" />
+    <None Include="asset\material\shader\dirLight_v.shader" />
+    <None Include="asset\material\shader\fullscreen_f.shader" />
+    <None Include="asset\material\shader\fullscreen_v.shader" />
+    <None Include="asset\material\shader\shadowmap_f.shader" />
+    <None Include="asset\material\shader\shadowmap_v.shader" />
+    <None Include="asset\material\shader\skybox_f.shader" />
+    <None Include="asset\material\shader\skybox_v.shader" />
+    <None Include="asset\scene\first_scene.scene" />
+    <None Include="asset\scene\house.scene" />
+    <None Include="asset\scene\output_scene.scene" />
+    <None Include="asset\scene\shadowmap_test.scene" />
+    <None Include="asset\scene\showing.scene" />
+    <None Include="asset\scene\solar_system.scene">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="asset\texture\skybox\starfield\starfield.sky" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
